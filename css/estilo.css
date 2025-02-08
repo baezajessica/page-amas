@@ -1,28 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reiniciar márgenes, padding, box-sizing, decoración de texto y estilo de lista */
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
+/* Estilos para el cuerpo del documento */
 body {
-    font-family: "Montserrat",sans-serif;
-    background:linear-gradient(
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
         90deg,
-       rgb(38,39,43)0%,
-       rgb(36,35,40,1)51%,
-       rgb(36,32,34,1)100%);
+        rgb(38,39,43) 0%,
+        rgb(36,35,40) 51%,
+        rgb(36,32,34) 100%
+    );
 }
+
+/* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Estilos del encabezado */
 .header {
     display: flex;
     align-items: center;
     min-height: 70vh;
 }
+
+/* Estilos del formulario */
 .formulario {
     width: 300px;
     margin: 0 auto;
@@ -45,152 +56,190 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.menu{
+
+/* Estilos del menú */
+.menu {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
+    text-decoration: none;
 }
-.logo{ 
-    color:#eeeff3;
+
+.logo { 
+    color: #eeeff3;
     font-size: 25px;
     font-weight: 800;
 }
-.menu .navbar ul li{
+
+.menu .navbar ul li {
     position: relative;
     float: left;
+    text-decoration: none;
 }
+
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color:#eeeff3;
+    color: #eeeff3;
     display: block;
     font-weight: 600;
 }
-.menu .navbar ul li a:hover{
-    color:#009946;
+
+.menu .navbar ul li a:hover {
+    color: #009946;
 }
+
 #menu {
     display: none;
 }
-.menu-icono{ 
+
+.menu-icono { 
     width: 25px;
 }
+
 .menu label {
-cursor: pointer;
-display: none;
+    cursor: pointer;
+    display: none;
 }
-.header-content{
+
+/* Contenido del encabezado */
+.header-content {
     padding: 150px 0 100px 0;
 }
-.header-img{
-     text-align: center;
+
+.header-img {
+    text-align: center;
 }
+
 .header-img h1 {
     font-size: 120px;
     line-height: 120px;
     color: #eeeff3;
     margin-bottom: 30px;
-    font-family:"Bebas Neue", serif;
+    font-family: "Bebas Neue", serif;
 }
-.header-img img{
+
+.header-img img {
     width: 600px;
 }
+
 .header-txt {
     margin: 150px 0 0 -250px;    
     background-color: #009946;
     padding: 55px 45px;
-    width: 500px;
+    width: 800px;
 }
-.header-txt h3{
+
+.img-amas {
+    width: auto;
+    border-radius: 50%;
+}
+
+.header-txt h3 {
     font-size: 20px;
     font-weight: 400;
     color: #eeeff3;
     margin-bottom: 10px;   
 }
+
 p {
     font-size: 16px;
     color: #d5d5d5;
 }
-.food{
+
+/* Sección de comida */
+.food {
     padding: 0 0 30px;
-    text-align:center;
+    text-align: center;
 }
+
 .food-title {
     padding: 0 250px;
 }
-h2{
+
+h2 {
     font-size: 55px;
     line-height: 70px;
     color: #eeeff3;
     margin-bottom: 20px;
 }
-.food-content{
+
+.food-content {
     margin-top: 40px;
 }
-.food-1{
+
+.food-1 {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
 }
-.food-img-1, .food-img-2{
-    width: 33%;
 
+.food-img-1, .food-img-2 {
+    width: 33%;
 }
-.food-img-1 img{
- 
-}
+
 .food-txt {
     width: 33%;
     text-align: left;
 }
+
 .food-txt h3 {
     color: #009946;
     font-size: 30px;
     margin-bottom: 15px;
 }
-.choice{
+
+/* Sección de elección */
+.choice {
     padding: 100px 0 250px 0;
     background-image: linear-gradient(
         rgba(38,39,43,0.9),
-        rgba(36,35,40,0.9)),
-        url(images/bg.jpg);
+        rgba(36,35,40,0.9)
+    ), url(images/bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;    
 }
-.choice-content{
+
+.choice-content {
     text-align: center;
     padding: 0 350px;
 }
-.product{
+
+/* Sección de productos */
+.product {
     display: flex;
     margin-top: -120px;
 }
-.product-1{
+
+.product-1 {
     width: 50%;
     text-align: right;   
 }
+
 .product-1 img {
     width: 180px;
     margin-right: 80px;
-
 }
-.product-2{
+
+.product-2 {
     width: 50%;
     background-color: #009946;
     padding: 50px 350px 50px 150px;
 }
-.product-2 h3{ 
+
+.product-2 h3 { 
     color: #eeeff3;
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 20px;
 }
-.btn-1{
+
+.btn-1 {
     display: inline-block;
     margin-top: 35px;
     padding: 13px 35px;
@@ -199,13 +248,17 @@ h2{
     font-size: 14px;
     text-transform: uppercase;    
 }
-.blog{
+
+/* Sección del blog */
+.blog {
     padding: 100px 0;    
 }
+
 .blog-txt {
     text-align: center;
     padding: 0 250px;
 }
+
 .blog-content {
     display: flex;
     justify-content: space-between;
@@ -215,60 +268,74 @@ h2{
     background-size: contain;
     padding: 250px 0;
 }
+
 .blog-1 img {
     width: 50px;
 }
+
 .blog-2 img {
     width: 50px;
 }
+
 .blog-1 {
     padding: 25px;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
     background-color: #009946;
     width: 450px;
 }
+
 .blog-2 {
     padding: 25px;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
     background-color: #212224;
     width: 450px;    
 }
+
 .blog-1 h3, .blog-2 h3 {
     color: #eeeff3;
     font-size: 16px;
     margin: 15px 0;
 }
+
+/* Sección del pie de página */
 .footer {
     text-align: center;
     padding: 20px 0 20px;
     border-top: 2px solid #d5d5d514;
     width: 100%;
 }
+
 .footer-content {
-    display:flex;
-    position: 0;
+    display: flex;
     justify-content: center;    
 }
+
 .link {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
     padding: 20px;
-    
+    text-decoration: none;
 }
+
 .link h3 {
     font-size: 20px;
     color: #eeeff3;
     margin-bottom: 15px;
+    text-decoration: none;
 }
+
 .link a {
     display: block;
     margin-bottom: 15px;
     color: #d5d5d5;
+    text-decoration: none;
 }
+
 .link a:hover {
     color: #009946;
 }
+
 
 @media(max-width:991px) {
     .menu {
@@ -414,4 +481,35 @@ h2{
         flex-direction: column;
         text-align: center;
     }
- }    
+ } 
+ .gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px); /* Cada item ocupa el 25% del ancho menos el margen */
+    margin: 10px; /* Margen entre los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+}
+
+.gallery-item img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* Dos elementos por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* Un elemento por fila en pantallas muy pequeñas */
+    }
+}   
